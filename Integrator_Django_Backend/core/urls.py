@@ -15,8 +15,7 @@ urlpatterns = [
     re_path(r'api/events?/', include('events.urls'), name='events'),
     re_path(r'api/locations?/', include('locations.urls'), name='locations'),
     re_path(r'api/posts?/', include('posts.urls'), name='posts'),
-    path('api/user/', include('users.urls'), name='users'),
-    
+    path('api/user/', include('users.urls'), name='users'),    
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
